@@ -1,0 +1,38 @@
+/*module calculator(in1, in2, clk, state, out)
+
+input reg [1:0] plus, subtract;
+input reg [15:0] in1, in2;
+
+
+
+parameter plus = 2'b01, subtract = 2'b10;
+reg [1:0] state;
+
+initial
+begin
+	
+end
+always @(state)
+*/
+module binary_to_bcd_converter(in, unit, ten, hun, thos)
+
+input reg [15:0] in;
+
+output reg [3:0] unit, ten, hun, thou;
+
+wire bcd;
+bcd = in;
+
+always @(bcd)
+begin 
+	thos = bcd/1000;
+	bcd = bcd % 1000;
+	hun = bcd/100;
+	bcd = bcd % 100;
+	ten = bcd / 10;
+	bcd = bcd % 10;
+	unit = bcd;
+end
+
+
+endmodule

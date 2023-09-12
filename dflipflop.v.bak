@@ -1,0 +1,19 @@
+module flipflop(d, clr, clk, q):
+input d;
+output reg q;
+input clr, clk;
+
+always @(posedge clk, posedge clr)
+begin
+	if (clr == 1)
+	begin
+		q <= 0;
+	end
+	else 
+	begin
+		d <= q;
+	end
+end
+
+endmodule
+

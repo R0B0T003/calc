@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\quartus\Projects\calculator\simulation\modelsim
+vbinary_to_bcd_converter
+!i10b 1
+!s100 cF5EMi^XdfL`]dlI<O8MN1
+I_jmd[I3U<HW72@cbNe;z]2
+VA>clh?a24Be4BhgKgb@k83
+Z1 dC:\altera\13.0sp1\quartus\Projects\calculator\simulation\modelsim
+w1693311081
+8calculator_6_1200mv_85c_slow.vo
+Fcalculator_6_1200mv_85c_slow.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1693311132.198000
+!s107 calculator_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|calculator_6_1200mv_85c_slow.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

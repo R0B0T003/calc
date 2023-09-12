@@ -1,0 +1,10 @@
+module simulus;
+	reg in = 16'b0100_1111_0000_1111;
+	
+	wire [3:0] units, tens, huns, thos;
+	binary_to_bcd_converter bcd1 (.unit(units), .ten(tens), .hun(huns), .thos(thos), .in(in))
+
+	initial 
+		$monitor($time, " in = %d, thos_b = %b, hun_b = %b, ten_b = %b, unit_b = %b ", in, thos, huns, tens, units);
+
+endmodule 

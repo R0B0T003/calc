@@ -1,0 +1,82 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do calculator_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:\altera\13.0sp1\modelsim_ase\win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module calculator
+# 
+# Top level modules:
+# 	calculator
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module binary_to_bcd_converter
+# 
+# Top level modules:
+# 	binary_to_bcd_converter
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg
+# 
+# Top level modules:
+# 	seven_seg
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dflipflop
+# 
+# Top level modules:
+# 	dflipflop
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module nbitflipflop
+# 
+# Top level modules:
+# 	nbitflipflop
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator {C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  stimulus
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps stimulus 
+# Loading work.stimulus
+# Loading work.calculator
+# Loading work.nbitflipflop
+# Loading work.seven_seg
+# Loading work.binary_to_bcd_converter
+# Loading work.dflipflop
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 in:   x, seg_in:   x, plus = x, equal = x, result  =   x, seg_display =   x
+#                    5 in:   x, seg_in:   x, plus = 1, equal = x, result  =   x, seg_display =   x
+#                   10 in:   x, seg_in:   x, plus = 1, equal = 1, result  =   x, seg_display =   x
+#                   15 in:  15, seg_in:   x, plus = 1, equal = 1, result  =   x, seg_display =  15
+#                   20 in:  15, seg_in:  15, plus = 0, equal = 1, result  =   x, seg_display =  15
+#                   21 in:  15, seg_in:  15, plus = 1, equal = 1, result  =   x, seg_display =  15
+#                   26 in:   2, seg_in:  15, plus = 1, equal = 1, result  =   x, seg_display =   2
+#                   31 in:   2, seg_in:  15, plus = 1, equal = 0, result  =  17, seg_display =  17
+#                   32 in:   2, seg_in:  15, plus = 1, equal = 1, result  =  17, seg_display =   2
+#                   37 in:   7, seg_in:  15, plus = 1, equal = 1, result  =  17, seg_display =   7
+#                   42 in:   7, seg_in:   7, plus = 0, equal = 1, result  =  17, seg_display =   7
+#                   43 in:   7, seg_in:   7, plus = 1, equal = 1, result  =  17, seg_display =   7
+#                   48 in:   3, seg_in:   7, plus = 1, equal = 1, result  =  17, seg_display =   3
+#                   53 in:   3, seg_in:   7, plus = 1, equal = 0, result  =  10, seg_display =  10
+#                   54 in:   3, seg_in:   7, plus = 1, equal = 1, result  =  10, seg_display =   3
+#                   59 in:   8, seg_in:   7, plus = 1, equal = 1, result  =  10, seg_display =   8
+#                   61 in:   8, seg_in:   7, plus = 1, equal = 0, result  =   0, seg_display =   0
+# Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 36
+# Simulation Breakpoint: Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 36
+# MACRO ./calculator_run_msim_rtl_verilog.do PAUSED at line 21

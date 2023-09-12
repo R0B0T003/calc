@@ -1,0 +1,218 @@
+|calculator
+in[0] => in[0].IN1
+in[1] => in[1].IN1
+in[2] => in[2].IN1
+in[3] => in[3].IN1
+in[4] => in[4].IN1
+in[5] => in[5].IN1
+in[6] => in[6].IN1
+in[7] => in[7].IN1
+seg1[0] <= seven_seg:sg.port2
+seg1[1] <= seven_seg:sg.port2
+seg1[2] <= seven_seg:sg.port2
+seg1[3] <= seven_seg:sg.port2
+seg1[4] <= seven_seg:sg.port2
+seg1[5] <= seven_seg:sg.port2
+seg1[6] <= seven_seg:sg.port2
+seg2[0] <= seven_seg:sg.port3
+seg2[1] <= seven_seg:sg.port3
+seg2[2] <= seven_seg:sg.port3
+seg2[3] <= seven_seg:sg.port3
+seg2[4] <= seven_seg:sg.port3
+seg2[5] <= seven_seg:sg.port3
+seg2[6] <= seven_seg:sg.port3
+seg3[0] <= seven_seg:sg.port4
+seg3[1] <= seven_seg:sg.port4
+seg3[2] <= seven_seg:sg.port4
+seg3[3] <= seven_seg:sg.port4
+seg3[4] <= seven_seg:sg.port4
+seg3[5] <= seven_seg:sg.port4
+seg3[6] <= seven_seg:sg.port4
+seg4[0] <= seven_seg:sg.port5
+seg4[1] <= seven_seg:sg.port5
+seg4[2] <= seven_seg:sg.port5
+seg4[3] <= seven_seg:sg.port5
+seg4[4] <= seven_seg:sg.port5
+seg4[5] <= seven_seg:sg.port5
+seg4[6] <= seven_seg:sg.port5
+plus => plus.IN1
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => seg_display.OUTPUTSELECT
+equal => add.IN1
+clk => ~NO_FANOUT~
+
+
+|calculator|nbitflipflop:nff
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+clr => clr.IN8
+clk => clk.IN8
+q[0] <= dflipflop:f_loop[0].dff.port3
+q[1] <= dflipflop:f_loop[1].dff.port3
+q[2] <= dflipflop:f_loop[2].dff.port3
+q[3] <= dflipflop:f_loop[3].dff.port3
+q[4] <= dflipflop:f_loop[4].dff.port3
+q[5] <= dflipflop:f_loop[5].dff.port3
+q[6] <= dflipflop:f_loop[6].dff.port3
+q[7] <= dflipflop:f_loop[7].dff.port3
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[0].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[1].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[2].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[3].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[4].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[5].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[6].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|nbitflipflop:nff|dflipflop:f_loop[7].dff
+d => q~reg0.DATAIN
+clr => q~reg0.ACLR
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|seven_seg:sg
+in[0] => in[0].IN1
+in[1] => in[1].IN1
+in[2] => in[2].IN1
+in[3] => in[3].IN1
+in[4] => in[4].IN1
+in[5] => in[5].IN1
+in[6] => in[6].IN1
+in[7] => in[7].IN1
+clr => clr.IN1
+seg1[0] <= WideOr27.DB_MAX_OUTPUT_PORT_TYPE
+seg1[1] <= WideOr26.DB_MAX_OUTPUT_PORT_TYPE
+seg1[2] <= WideOr25.DB_MAX_OUTPUT_PORT_TYPE
+seg1[3] <= WideOr24.DB_MAX_OUTPUT_PORT_TYPE
+seg1[4] <= WideOr23.DB_MAX_OUTPUT_PORT_TYPE
+seg1[5] <= WideOr22.DB_MAX_OUTPUT_PORT_TYPE
+seg1[6] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
+seg2[0] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
+seg2[1] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
+seg2[2] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+seg2[3] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+seg2[4] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+seg2[5] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+seg2[6] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+seg3[0] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+seg3[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+seg3[2] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+seg3[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+seg3[4] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+seg3[5] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+seg3[6] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+seg4[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg4[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg4[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg4[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg4[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg4[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg4[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator|seven_seg:sg|binary_to_bcd_converter:bcd1
+in[0] => Div0.IN17
+in[0] => Mod0.IN17
+in[1] => Div0.IN16
+in[1] => Mod0.IN16
+in[2] => Div0.IN15
+in[2] => Mod0.IN15
+in[3] => Div0.IN14
+in[3] => Mod0.IN14
+in[4] => Div0.IN13
+in[4] => Mod0.IN13
+in[5] => Div0.IN12
+in[5] => Mod0.IN12
+in[6] => Div0.IN11
+in[6] => Mod0.IN11
+in[7] => Div0.IN10
+in[7] => Mod0.IN10
+clr => thos.OUTPUTSELECT
+clr => thos.OUTPUTSELECT
+clr => thos.OUTPUTSELECT
+clr => thos.OUTPUTSELECT
+clr => hun.OUTPUTSELECT
+clr => hun.OUTPUTSELECT
+clr => hun.OUTPUTSELECT
+clr => hun.OUTPUTSELECT
+clr => ten.OUTPUTSELECT
+clr => ten.OUTPUTSELECT
+clr => ten.OUTPUTSELECT
+clr => ten.OUTPUTSELECT
+clr => unit.OUTPUTSELECT
+clr => unit.OUTPUTSELECT
+clr => unit.OUTPUTSELECT
+clr => unit.OUTPUTSELECT
+unit[0] <= unit.DB_MAX_OUTPUT_PORT_TYPE
+unit[1] <= unit.DB_MAX_OUTPUT_PORT_TYPE
+unit[2] <= unit.DB_MAX_OUTPUT_PORT_TYPE
+unit[3] <= unit.DB_MAX_OUTPUT_PORT_TYPE
+ten[0] <= ten.DB_MAX_OUTPUT_PORT_TYPE
+ten[1] <= ten.DB_MAX_OUTPUT_PORT_TYPE
+ten[2] <= ten.DB_MAX_OUTPUT_PORT_TYPE
+ten[3] <= ten.DB_MAX_OUTPUT_PORT_TYPE
+hun[0] <= hun.DB_MAX_OUTPUT_PORT_TYPE
+hun[1] <= hun.DB_MAX_OUTPUT_PORT_TYPE
+hun[2] <= hun.DB_MAX_OUTPUT_PORT_TYPE
+hun[3] <= hun.DB_MAX_OUTPUT_PORT_TYPE
+thos[0] <= thos.DB_MAX_OUTPUT_PORT_TYPE
+thos[1] <= thos.DB_MAX_OUTPUT_PORT_TYPE
+thos[2] <= thos.DB_MAX_OUTPUT_PORT_TYPE
+thos[3] <= thos.DB_MAX_OUTPUT_PORT_TYPE
+
+

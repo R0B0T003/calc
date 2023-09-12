@@ -1,0 +1,38 @@
+module stimulus();
+	reg [7:0] in;
+	reg plus, equal, clk; 
+	reg clr;
+	wire [7:0] seg_in; 
+	reg [7:0] seg_display, result;
+	reg [6:0] seg1, seg2, seg3, seg4;
+	
+	calculator cal (in, seg1, seg2, seg3, seg4, plus, equal, clk);
+	
+
+	initial 
+		clk = 1'b0;
+		
+	always
+		#1 clk = ~clk;
+	
+	always
+		begin
+			#1 in = 8'b1111_1111;
+			#5 in = 8'b1001_1111;
+			#10 plus = 0;
+			#11 plus = 1;
+			#15 in = 8'b0000_1010;
+			#20 equal = 0;
+			#21 equal = 1;
+			#25 in = 8'b0000_0001;
+			#26 equal = 0;
+			#27 equal = 1;
+			#30 in = 8'b0000_1010;
+			#35 plus = 0;
+			#36 plus = 1;
+			#50 equal = 1;
+			
+		end
+	initial
+		$monitor($time, " in: %d, seg_in: %d, result: %d, seg_display: %d ", in, seg_in, result, seg_display);
+endmodule 

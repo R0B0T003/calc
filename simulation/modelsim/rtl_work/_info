@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\quartus\Projects\calculator\simulation\modelsim
+vbinary_to_bcd_converter
+IXD_AUYL@_42P5O2@H5bd31
+VBO:eG9ATS;BU3_YlP^AQN3
+Z1 dC:\altera\13.0sp1\quartus\Projects\calculator\simulation\modelsim
+w1694170876
+8C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calculator -O0
+!i10b 1
+!s100 MTbNC;XDbXanf5Rf5h;Vh1
+!s85 0
+!s108 1694423984.401000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v|
+!s101 -O0
+vcalculator
+I7lZCNY89em[@]Nn@H9k<k1
+V6bgj9kFdZDkU8GFU9>QN73
+R1
+w1694423930
+8C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/calculator.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1KXiC:K:akAK8`e[aa9N33
+!s85 0
+!s108 1694423984.167000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v|
+!s101 -O0
+vdflipflop
+IV==VCWdJ2i@I5L`7<eeNU1
+V3TfF1J?RIm2zDK@zgg:Nj1
+R1
+w1694422104
+8C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 5hWNA:dchadJbNH:1CBE12
+!s85 0
+!s108 1694423984.760000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v|
+!s101 -O0
+vnbitflipflop
+IXPYZC[m:o5n:m[:ZK2E7M2
+VKL<]9D`ifT_[C5blb3@R23
+R1
+w1694185856
+8C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >C_Kb]=VUiWcYFK>XKj<63
+!s85 0
+!s108 1694423984.948000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v|
+!s101 -O0
+vseven_seg
+I9_Y80Bz]hWzP5NGcnI9W?2
+V6gJ5c<^FX1nDPbn]MUfoR3
+R1
+w1694421073
+8C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 SGRcRd^^QkVNn9>mDbfaz3
+!s85 0
+!s108 1694423984.604000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v|
+!s101 -O0
+vstimulus
+!i10b 1
+!s100 BJ<`TkR^G[ClW`a7:bUFX3
+IfEDYjOeE4bmB7e8alo7QP2
+Vj_kQ[Pef^WSz:;eABMRPQ3
+R1
+w1694423106
+8C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v
+FC:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1694423985.168000
+!s107 C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v|
+!s101 -O0
+R3
+R4

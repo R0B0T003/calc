@@ -1,0 +1,6 @@
+
+State Machine - |calculator|state
+Name state.SUB state.EQUAL state.ADD 
+state.SUB 0 0 0 
+state.ADD 1 0 1 
+state.EQUAL 1 1 0 

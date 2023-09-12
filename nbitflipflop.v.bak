@@ -1,0 +1,16 @@
+module nbitflipflop(d, clr, clk, q);
+input [7 : 0] d;
+output reg [7 : 0] q;
+input clr, clk;
+
+parameter N = 8;
+
+genvar i;
+
+generate for(i = 0; i < N; i = i+1)
+begin: f_loop
+	dflipflop dff (d[i], clr, clk, q[i]);
+end
+endgenerate
+endmodule 
+

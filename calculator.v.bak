@@ -1,0 +1,33 @@
+module calculator(in, plus, minus, equal, out, clk);
+	input [9:0] in;
+	input minus, plus, equal;
+	output [3:0] out;
+	reg [9:0] save_in;
+	seven_seg sg(out[0], out[1], out[2], out[3], in);
+	parameter SUB = 2'b00, ADD = 2'b01, EQUAL = 2'b10; 
+	reg [1:0] state;
+	
+
+	always @(negedge minus)
+	begin
+		save_in = in;
+		in = 10'b0000_0000_00;
+		
+		if(in != 0) state = SUB;
+		
+	end
+	
+	always @(negedge plus)
+	begin
+		save_in = in;
+		in = 10'b0000_0000_00;
+		if(in != 0) state = ADD;
+	end
+	
+	always @ (negedge equal)
+	begin
+		case(state)
+			ADD: in = save_in + in;
+			SUB: in = save_in - in;
+		endcase	
+	end
