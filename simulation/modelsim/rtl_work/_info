@@ -19,15 +19,15 @@ Z4 !s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/calc
 !i10b 1
 !s100 MTbNC;XDbXanf5Rf5h;Vh1
 !s85 0
-!s108 1694423984.401000
+!s108 1694489614.377000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/binary_to_bcd_converter.v|
 !s101 -O0
 vcalculator
-I7lZCNY89em[@]Nn@H9k<k1
-V6bgj9kFdZDkU8GFU9>QN73
+Ia4l=h?1FhX^G<Cbhl`=PP0
+VbO86FkUEB]=F_Ce__>9le3
 R1
-w1694423930
+w1694489571
 8C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v
 FC:/altera/13.0sp1/quartus/Projects/calculator/calculator.v
 L0 1
@@ -37,9 +37,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 1KXiC:K:akAK8`e[aa9N33
+!s100 l=EeeHcRQoz=Ne2G7CFz:2
 !s85 0
-!s108 1694423984.167000
+!s108 1694489614.222000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/calculator.v|
 !s101 -O0
@@ -59,7 +59,7 @@ R4
 !i10b 1
 !s100 5hWNA:dchadJbNH:1CBE12
 !s85 0
-!s108 1694423984.760000
+!s108 1694489614.746000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/dflipflop.v|
 !s101 -O0
@@ -79,7 +79,7 @@ R4
 !i10b 1
 !s100 >C_Kb]=VUiWcYFK>XKj<63
 !s85 0
-!s108 1694423984.948000
+!s108 1694489614.889000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/nbitflipflop.v|
 !s101 -O0
@@ -99,17 +99,17 @@ R4
 !i10b 1
 !s100 SGRcRd^^QkVNn9>mDbfaz3
 !s85 0
-!s108 1694423984.604000
+!s108 1694489614.619000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/seven_seg.v|
 !s101 -O0
 vstimulus
 !i10b 1
-!s100 BJ<`TkR^G[ClW`a7:bUFX3
-IfEDYjOeE4bmB7e8alo7QP2
+!s100 W5jeG><7j_B9NP2Lj9V4?3
+IC]E;ZiY[RYi6@eXdgUGf73
 Vj_kQ[Pef^WSz:;eABMRPQ3
 R1
-w1694423106
+w1694488861
 8C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v
 FC:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v
 L0 1
@@ -117,7 +117,7 @@ R2
 r1
 !s85 0
 31
-!s108 1694423985.168000
+!s108 1694489615.043000
 !s107 C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/calculator|C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v|
 !s101 -O0

@@ -8,6 +8,7 @@ entity calculator is
         seg3            : out    vl_logic_vector(6 downto 0);
         seg4            : out    vl_logic_vector(6 downto 0);
         plus            : in     vl_logic;
+        minus           : in     vl_logic;
         equal           : in     vl_logic;
         clk             : in     vl_logic
     );

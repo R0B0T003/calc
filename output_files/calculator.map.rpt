@@ -1,5 +1,5 @@
 Analysis & Synthesis report for calculator
-Mon Sep 11 10:18:56 2023
+Tue Sep 12 04:32:58 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -50,16 +50,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 11 10:18:56 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 12 04:32:58 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; calculator                                      ;
 ; Top-level Entity Name              ; calculator                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 216                                             ;
-;     Total combinational functions  ; 208                                             ;
+; Total logic elements               ; 231                                             ;
+;     Total combinational functions  ; 223                                             ;
 ;     Dedicated logic registers      ; 8                                               ;
 ; Total registers                    ; 8                                               ;
-; Total pins                         ; 39                                              ;
+; Total pins                         ; 40                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -195,34 +195,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 216   ;
-;                                             ;       ;
-; Total combinational functions               ; 208   ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 57    ;
-;     -- 3 input functions                    ; 65    ;
-;     -- <=2 input functions                  ; 86    ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 149   ;
-;     -- arithmetic mode                      ; 59    ;
-;                                             ;       ;
-; Total registers                             ; 8     ;
-;     -- Dedicated logic registers            ; 8     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 39    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; plus  ;
-; Maximum fan-out                             ; 33    ;
-; Total fan-out                               ; 607   ;
-; Average fan-out                             ; 2.38  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 231       ;
+;                                             ;           ;
+; Total combinational functions               ; 223       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 60        ;
+;     -- 3 input functions                    ; 76        ;
+;     -- <=2 input functions                  ; 87        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 158       ;
+;     -- arithmetic mode                      ; 65        ;
+;                                             ;           ;
+; Total registers                             ; 8         ;
+;     -- Dedicated logic registers            ; 8         ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 40        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; operation ;
+; Maximum fan-out                             ; 27        ;
+; Total fan-out                               ; 654       ;
+; Average fan-out                             ; 2.41      ;
++---------------------------------------------+-----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -230,7 +230,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |calculator                                  ; 208 (26)          ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |calculator                                                                                                                                           ; work         ;
+; |calculator                                  ; 223 (40)          ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |calculator                                                                                                                                           ; work         ;
 ;    |nbitflipflop:nff|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff                                                                                                                          ; work         ;
 ;       |dflipflop:f_loop[0].dff|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff|dflipflop:f_loop[0].dff                                                                                                  ; work         ;
 ;       |dflipflop:f_loop[1].dff|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff|dflipflop:f_loop[1].dff                                                                                                  ; work         ;
@@ -240,20 +240,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |dflipflop:f_loop[5].dff|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff|dflipflop:f_loop[5].dff                                                                                                  ; work         ;
 ;       |dflipflop:f_loop[6].dff|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff|dflipflop:f_loop[6].dff                                                                                                  ; work         ;
 ;       |dflipflop:f_loop[7].dff|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|nbitflipflop:nff|dflipflop:f_loop[7].dff                                                                                                  ; work         ;
-;    |seven_seg:sg|                            ; 182 (25)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg                                                                                                                              ; work         ;
-;       |binary_to_bcd_converter:bcd1|         ; 157 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1                                                                                                 ; work         ;
+;    |seven_seg:sg|                            ; 183 (17)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg                                                                                                                              ; work         ;
+;       |binary_to_bcd_converter:bcd1|         ; 166 (11)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1                                                                                                 ; work         ;
 ;          |lpm_divide:Div1|                   ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div1                                                                                 ; work         ;
 ;             |lpm_divide_4dm:auto_generated|  ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div1|lpm_divide_4dm:auto_generated                                                   ; work         ;
 ;                |sign_div_unsign_ekh:divider| ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
 ;                   |alt_u_div_uve:divider|    ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div1|lpm_divide_4dm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider ; work         ;
-;          |lpm_divide:Div2|                   ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2                                                                                 ; work         ;
-;             |lpm_divide_0dm:auto_generated|  ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_akh:divider| ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
-;                   |alt_u_div_28f:divider|    ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_28f:divider ; work         ;
-;          |lpm_divide:Mod1|                   ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1                                                                                 ; work         ;
-;             |lpm_divide_75m:auto_generated|  ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated                                                   ; work         ;
-;                |sign_div_unsign_ekh:divider| ; 37 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
-;                   |alt_u_div_uve:divider|    ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider ; work         ;
+;          |lpm_divide:Div2|                   ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2                                                                                 ; work         ;
+;             |lpm_divide_0dm:auto_generated|  ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_akh:divider| ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
+;                   |alt_u_div_28f:divider|    ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Div2|lpm_divide_0dm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_28f:divider ; work         ;
+;          |lpm_divide:Mod1|                   ; 40 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1                                                                                 ; work         ;
+;             |lpm_divide_75m:auto_generated|  ; 40 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_ekh:divider| ; 40 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated|sign_div_unsign_ekh:divider                       ; work         ;
+;                   |alt_u_div_uve:divider|    ; 40 (40)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod1|lpm_divide_75m:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_uve:divider ; work         ;
 ;          |lpm_divide:Mod2|                   ; 44 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod2                                                                                 ; work         ;
 ;             |lpm_divide_35m:auto_generated|  ; 44 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod2|lpm_divide_35m:auto_generated                                                   ; work         ;
 ;                |sign_div_unsign_akh:divider| ; 44 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|seven_seg:sg|binary_to_bcd_converter:bcd1|lpm_divide:Mod2|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
@@ -262,22 +262,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; seg_display[0]                                     ; plus                ; yes                    ;
-; seg_display[1]                                     ; plus                ; yes                    ;
-; seg_display[2]                                     ; plus                ; yes                    ;
-; seg_display[3]                                     ; plus                ; yes                    ;
-; add                                                ; add                 ; yes                    ;
-; seg_display[4]                                     ; plus                ; yes                    ;
-; seg_display[7]                                     ; plus                ; yes                    ;
-; seg_display[5]                                     ; plus                ; yes                    ;
-; seg_display[6]                                     ; plus                ; yes                    ;
-; Number of user-specified and inferred latches = 9  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; seg_display[0]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[1]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[2]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[3]                                      ; seg_display[7]      ; yes                    ;
+; add                                                 ; add                 ; yes                    ;
+; sub                                                 ; sub                 ; yes                    ;
+; seg_display[4]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[7]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[5]                                      ; seg_display[7]      ; yes                    ;
+; seg_display[6]                                      ; seg_display[7]      ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -301,7 +302,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|seg_display    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|seg_display    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -434,7 +435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -444,7 +445,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Sep 11 10:18:52 2023
+    Info: Processing started: Tue Sep 12 04:32:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off calculator -c calculator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file stimulus.v
@@ -460,20 +461,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file dflipfl
 Info (12021): Found 1 design units, including 1 entities, in source file nbitflipflop.v
     Info (12023): Found entity 1: nbitflipflop
 Info (12127): Elaborating entity "calculator" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at calculator.v(25): variable "add" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at calculator.v(27): variable "seg_in" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at calculator.v(12): inferring latch(es) for variable "add", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at calculator.v(12): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at calculator.v(12): inferring latch(es) for variable "seg_display", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "seg_display[0]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[1]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[2]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[3]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[4]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[5]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[6]" at calculator.v(22)
-Info (10041): Inferred latch for "seg_display[7]" at calculator.v(22)
-Info (10041): Inferred latch for "add" at calculator.v(22)
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(13): variable "plus" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(14): variable "minus" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(35): variable "add" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(37): variable "seg_in" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(40): variable "sub" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at calculator.v(42): variable "seg_in" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10240): Verilog HDL Always Construct warning at calculator.v(18): inferring latch(es) for variable "add", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at calculator.v(18): inferring latch(es) for variable "sub", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at calculator.v(18): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at calculator.v(18): inferring latch(es) for variable "seg_display", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "seg_display[0]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[1]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[2]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[3]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[4]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[5]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[6]" at calculator.v(25)
+Info (10041): Inferred latch for "seg_display[7]" at calculator.v(25)
+Info (10041): Inferred latch for "sub" at calculator.v(25)
+Info (10041): Inferred latch for "add" at calculator.v(25)
 Info (12128): Elaborating entity "nbitflipflop" for hierarchy "nbitflipflop:nff"
 Info (12128): Elaborating entity "dflipflop" for hierarchy "nbitflipflop:nff|dflipflop:f_loop[0].dff"
 Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:sg"
@@ -560,6 +567,8 @@ Info (12133): Instantiated megafunction "seven_seg:sg|binary_to_bcd_converter:bc
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4dm.tdf
     Info (12023): Found entity 1: lpm_divide_4dm
+Warning (13012): Latch sub has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal minus
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg3[1]" is stuck at GND
     Warning (13410): Pin "seg4[0]" is stuck at GND
@@ -574,15 +583,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk"
-Info (21057): Implemented 255 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
+Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 216 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info (21061): Implemented 231 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 4616 megabytes
-    Info: Processing ended: Mon Sep 11 10:18:56 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Tue Sep 12 04:32:58 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

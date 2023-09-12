@@ -55,28 +55,48 @@
 # Loading work.dflipflop
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Emmanuel  Hostname: DESKTOP-869RTNQ  ProcessID: 316
+# 
+#           Attempting to use alternate WLF file "./wlftisggh9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftisggh9
+# 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-#                    0 in:   x, seg_in:   x, plus = x, equal = x, result  =   x, seg_display =   x
-#                    5 in:   x, seg_in:   x, plus = 1, equal = x, result  =   x, seg_display =   x
-#                   10 in:   x, seg_in:   x, plus = 1, equal = 1, result  =   x, seg_display =   x
-#                   15 in:  15, seg_in:   x, plus = 1, equal = 1, result  =   x, seg_display =  15
-#                   20 in:  15, seg_in:  15, plus = 0, equal = 1, result  =   x, seg_display =  15
-#                   21 in:  15, seg_in:  15, plus = 1, equal = 1, result  =   x, seg_display =  15
-#                   26 in:   2, seg_in:  15, plus = 1, equal = 1, result  =   x, seg_display =   2
-#                   31 in:   2, seg_in:  15, plus = 1, equal = 0, result  =  17, seg_display =  17
-#                   32 in:   2, seg_in:  15, plus = 1, equal = 1, result  =  17, seg_display =   2
-#                   37 in:   7, seg_in:  15, plus = 1, equal = 1, result  =  17, seg_display =   7
-#                   42 in:   7, seg_in:   7, plus = 0, equal = 1, result  =  17, seg_display =   7
-#                   43 in:   7, seg_in:   7, plus = 1, equal = 1, result  =  17, seg_display =   7
-#                   48 in:   3, seg_in:   7, plus = 1, equal = 1, result  =  17, seg_display =   3
-#                   53 in:   3, seg_in:   7, plus = 1, equal = 0, result  =  10, seg_display =  10
-#                   54 in:   3, seg_in:   7, plus = 1, equal = 1, result  =  10, seg_display =   3
-#                   59 in:   8, seg_in:   7, plus = 1, equal = 1, result  =  10, seg_display =   8
-#                   61 in:   8, seg_in:   7, plus = 1, equal = 0, result  =   0, seg_display =   0
-# Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 36
-# Simulation Breakpoint: Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 36
+#                    0 in:   x, seg_in:   x, plus = x, minus = x, operation = 1 equal = x, result  =   x, seg_display =   x
+#                    5 in:   x, seg_in:   x, plus = 1, minus = x, operation = 1 equal = x, result  =   x, seg_display =   x
+#                   10 in:   x, seg_in:   x, plus = 1, minus = x, operation = 1 equal = 1, result  =   x, seg_display =   x
+#                   15 in:  15, seg_in:   x, plus = 1, minus = x, operation = 1 equal = 1, result  =   x, seg_display =  15
+#                   20 in:  15, seg_in:  15, plus = 0, minus = x, operation = 0 equal = 1, result  =   x, seg_display =  15
+#                   21 in:  15, seg_in:  15, plus = 1, minus = x, operation = 1 equal = 1, result  =   x, seg_display =  15
+#                   26 in:   2, seg_in:  15, plus = 1, minus = x, operation = 1 equal = 1, result  =   x, seg_display =   2
+#                   31 in:   2, seg_in:  15, plus = 1, minus = x, operation = 1 equal = 0, result  =  17, seg_display =  17
+#                   32 in:   2, seg_in:  15, plus = 1, minus = x, operation = 1 equal = 1, result  =  17, seg_display =   2
+#                   37 in:   7, seg_in:  15, plus = 1, minus = x, operation = 1 equal = 1, result  =  17, seg_display =   7
+#                   42 in:   7, seg_in:   7, plus = 0, minus = x, operation = 0 equal = 1, result  =  17, seg_display =   7
+#                   43 in:   7, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 1, result  =  17, seg_display =   7
+#                   48 in:   3, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 1, result  =  17, seg_display =   3
+#                   53 in:   3, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 0, result  =  10, seg_display =  10
+#                   54 in:   3, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 1, result  =  10, seg_display =   3
+#                   59 in:   8, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 1, result  =  10, seg_display =   8
+#                   61 in:   8, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 0, result  =   0, seg_display =   0
+#                   62 in:   8, seg_in:   7, plus = 1, minus = x, operation = 1 equal = 1, result  =   0, seg_display =   8
+#                   67 in:   8, seg_in:   8, plus = 1, minus = 0, operation = 0 equal = 1, result  =   0, seg_display =   8
+#                   68 in:   8, seg_in:   8, plus = 1, minus = 1, operation = 1 equal = 1, result  =   0, seg_display =   8
+#                   73 in:   2, seg_in:   8, plus = 1, minus = 1, operation = 1 equal = 1, result  =   0, seg_display =   2
+#                   75 in:   2, seg_in:   8, plus = 1, minus = 1, operation = 1 equal = 0, result  =   6, seg_display =   6
+#                   76 in:   2, seg_in:   8, plus = 1, minus = 1, operation = 1 equal = 1, result  =   6, seg_display =   2
+#                   81 in:   2, seg_in:   2, plus = 1, minus = 0, operation = 0 equal = 1, result  =   6, seg_display =   2
+#                   82 in:   2, seg_in:   2, plus = 1, minus = 1, operation = 1 equal = 1, result  =   6, seg_display =   2
+#                   87 in:   1, seg_in:   2, plus = 1, minus = 1, operation = 1 equal = 1, result  =   6, seg_display =   1
+#                   89 in:   1, seg_in:   2, plus = 1, minus = 1, operation = 1 equal = 0, result  =   1, seg_display =   1
+#                   90 in:   1, seg_in:   2, plus = 1, minus = 1, operation = 1 equal = 1, result  =   1, seg_display =   1
+# Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 48
+# Simulation Breakpoint: Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/calculator/stimulus.v line 48
 # MACRO ./calculator_run_msim_rtl_verilog.do PAUSED at line 21

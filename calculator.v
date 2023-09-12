@@ -8,19 +8,22 @@ reg [7:0] seg_display, result;
 output [6:0] seg1, seg2, seg3, seg4;
 nbitflipflop nff (in, , operation, seg_in);
 seven_seg sg(seg_display, clr, seg1, seg2, seg3, seg4);
+always @(clk)
+begin
+	if(plus == 0) operation = plus;
+	else if(minus == 0) operation = minus;
+	else operation = 1'b1;
+end
 
-
-always @(in, plus, equal)
+always @(in, plus, minus, equal)
 begin
 	if(plus == 0)
 	begin
-		operation = plus;
 		clr <= 1'b1;
 		add = 1'b1;
 	end
 	else if (minus == 0)
 	begin
-		operation = minus;
 		clr <= 1'b1;
 		sub = 1'b1;
 	end

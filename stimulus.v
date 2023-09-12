@@ -3,8 +3,8 @@ module stimulus();
 
 
 	wire [6:0] seg1, seg2, seg3, seg4;
-	reg plus, equal, clk;
-	calculator cal (in, seg1, seg2, seg3, seg4, plus, equal, clk);
+	reg plus, minus, equal, clk;
+	calculator cal (in, seg1, seg2, seg3, seg4, plus, minus, equal, clk);
 	
 
 	initial 
@@ -31,11 +31,23 @@ module stimulus();
 			#1 equal = 1;	
 			#5 in = 8'b0000_1000;
 			#2 equal = 0;
+			#1 equal = 1;
 			
+			#5 minus = 0;
+			#1 minus = 1;
+			#5 in = 8'b0000_0010;
+			#2 equal = 0;
+			#1 equal = 1;
+			
+			#5 minus = 0;
+			#1 minus = 1;
+			#5 in = 8'b0000_0001;
+			#2 equal = 0;
+			#1 equal = 1;
 			
 			#100 $stop;
 		end
 	initial
-		$monitor($time, " in: %d, seg_in: %d, plus = %b, equal = %b, result  = %d, seg_display = %d", in,
-		cal.seg_in,  plus, equal, cal.result, cal.seg_display);
+		$monitor($time, " in: %d, seg_in: %d, plus = %b, minus = %b, operation = %b equal = %b, result  = %d, seg_display = %d", in,
+		cal.seg_in,  plus, minus, cal.operation, equal, cal.result, cal.seg_display);
 endmodule 
